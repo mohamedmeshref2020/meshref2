@@ -1,0 +1,427 @@
+<html>
+
+<head>
+<style>
+.highlighted {visibility:visible;}
+.hidden {visibility:hidden;}
+</style>
+    <title>level 2</title>
+	<script src="jquery-1.8.0.min.js" type="text/javascript"></script>  
+</head>
+<body  onload="photo()" style="background-color:#ADD8E6">
+
+<div style="height:1px;">
+
+<script type="text/javascript">
+	  var index;
+	  var index1;
+	  var index2;
+	  var index3;
+	  var index4;
+	  var NumberOfClick;
+	  var p=100;
+	  var t;
+	  function StartGame()
+	  {
+	    var PhotoArray=new Array();
+		for(var i=0;i<=20;i++)
+		{
+		 PhotoArray[i]=i+'.jpg';
+		}
+		var random= Math.round ( Math.random() * PhotoArray.length );
+		return random;
+	  }
+	  </script>
+
+<script>
+function photo()
+	  {
+	    index=StartGame();
+		var image1;
+		var image2;
+		var image3;
+		var image4;
+		var image5;
+		var image6;
+		var image7;
+		var image8;
+		var imagea=document.createElement('img');
+		imagea.src=index+'.jpg';
+		imagea.id='imagea';
+		imagea.className="hidden";
+		document.body.appendChild(imagea);
+		var imageb=document.createElement('img');
+		imageb.src=index+'.jpg';
+		imageb.id='imageb';
+		imageb.className="hidden";
+		
+		document.body.appendChild(imageb);
+		index1=index+1;
+		if(index1 > 20)
+		{
+		  index1 = 17;
+		   image1=document.createElement('img');
+		  image1.src=index1+'.jpg';
+		  image1.id='image1';
+		  image1.className="hidden";
+		  document.body.appendChild(image1);
+		   image2=document.createElement('img');
+		  image2.src=index1+'.jpg';
+		    image2.id='image2';
+		  image2.className="hidden";
+		  document.body.appendChild(image2);
+		}
+		else
+		{
+		   image1=document.createElement('img');
+		  image1.src=index1+'.jpg';
+		  image1.id='image1';
+		  image1.className="hidden";
+		  document.body.appendChild(image1);
+		   image2=document.createElement('img');
+		  image2.src=index1+'.jpg';
+  		  image2.id='image2';
+		  image2.className="hidden";
+		  document.body.appendChild(image2);
+		}	
+		index2=index+2;
+        if(index2 > 20)
+		{
+		  index1 = 8;
+		   image3=document.createElement('img');
+		  image3.src=index2+'.jpg';
+		  image3.id='image3';
+		  image3.className="hidden";
+		  document.body.appendChild(image3);
+		   image4=document.createElement('img');
+		  image4.src=index2+'.jpg';
+		    image4.id='image4';
+		  image4.className="hidden";
+		  document.body.appendChild(image4);
+		}
+		else
+		{
+		   image3=document.createElement('img');
+		  image3.src=index2+'.jpg';
+		  image3.id='image3';
+		  image3.className="hidden";
+		  document.body.appendChild(image3);
+		   image4=document.createElement('img');
+		  image4.src=index2+'.jpg';
+  		  image4.id='image4';
+		  image4.className="hidden";
+		  document.body.appendChild(image4);
+		}
+        index3=index+3;
+        if(index3 > 20)
+		{
+		  index3 = 7;
+		   image5=document.createElement('img');
+		  image5.src=index3+'.jpg';
+		  image5.id='image5';
+		  image5.className="hidden";
+		  document.body.appendChild(image5);
+		   image6=document.createElement('img');
+		  image6.src=index3+'.jpg';
+		    image6.id='image6';
+		  image6.className="hidden";
+		  document.body.appendChild(image6);
+		}
+		else
+		{
+		   image5=document.createElement('img');
+		  image5.src=index3+'.jpg';
+		  image5.id='image5';
+		  image5.className="hidden";
+		  document.body.appendChild(image3);
+		   image6=document.createElement('img');
+		  image6.src=index3+'.jpg';
+  		  image6.id='image6';
+		  image6.className="hidden";
+		  document.body.appendChild(image6);
+		}
+        index4=index+4;
+       if(index4 > 20)
+		{
+		  index4 = 6;
+		   image7=document.createElement('img');
+		  image7.src=index3+'.jpg';
+		  image7.id='image7';
+		  image7.className="hidden";
+		  document.body.appendChild(image7);
+		   image8=document.createElement('img');
+		  image8.src=index3+'.jpg';
+		    image8.id='image8';
+		  image8.className="hidden";
+		  document.body.appendChild(image8);
+		}
+		else
+		{
+		   image7=document.createElement('img');
+		  image7.src=index3+'.jpg';
+		  image7.id='image7';
+		  image7.className="hidden";
+		  document.body.appendChild(image7);
+		   image8=document.createElement('img');
+		  image8.src=index3+'.jpg';
+  		  image8.id='image8';
+		  image8.className="hidden";
+		  document.body.appendChild(image8);
+		}	   
+	  }
+	  </script>
+	  <script>
+var x=0;
+var count1=0;
+var count2=0;
+var CountIm1=0;
+var CountIm2=0;
+var CountIm3=0;
+var CountIm4=0;
+var CountIm5=0;
+var CountIm6=0;
+var CountIm7=0;
+var CountIm8=0;
+var CountIm9=0;
+var CountIm10=0;
+
+function CheckToFinish(NumberOfClick)
+{
+    if(document.getElementById("im1").className == 'hidden' && 
+	   document.getElementById("im2").className == 'hidden' && 
+	   document.getElementById("im3").className == 'hidden' && 
+	   document.getElementById("im4").className == 'hidden' &&
+	   document.getElementById("im5").className == 'hidden' && 
+	   document.getElementById("im6").className == 'hidden' &&
+	   document.getElementById("im7").className == 'hidden' &&
+	   document.getElementById("im8").className == 'hidden' && 
+	   document.getElementById("im9").className == 'hidden' &&
+	   document.getElementById("im10").className == 'hidden')
+	{
+	  
+	    alert("No. of Click " + NumberOfClick);
+		document.body.background="0.gif";
+		ocument.body.style.backgroundRepeat = "no-repeat";
+	  document.body.style.backgroundSize = "cover";
+	}
+} 
+
+function fun2(Im1,Im2,Im3,Im4,Im5,Im6,Im7,Im8,Im9,Im10,NumberOfClick)
+{
+
+  if (Im1 == 1 && Im7 == 1)
+  {
+    $('#im1').removeClass("highlighted");
+	$('#im1').addClass("hidden");
+	$('#im7').removeClass("highlighted");
+	$('#im7').addClass("hidden");
+  }
+  if (Im2 == 1 && Im9 == 1)
+  {
+    $('#im2').removeClass("highlighted");
+	$('#im2').addClass("hidden");
+	$('#im9').removeClass("highlighted");
+	$('#im9').addClass("hidden");
+  }
+    if (Im5 == 1 && Im10 == 1)
+  {
+    $('#im5').removeClass("highlighted");
+	$('#im5').addClass("hidden");
+	$('#im10').removeClass("highlighted");
+	$('#im10').addClass("hidden");
+	//alert("End");
+  }
+    if (Im3 == 1 && Im6 == 1)
+  {
+    $('#im3').removeClass("highlighted");
+	$('#im3').addClass("hidden");
+	$('#im6').removeClass("highlighted");
+	$('#im6').addClass("hidden");
+  }
+    if (Im4 == 1 && Im8 == 1)
+  {
+    $('#im4').removeClass("highlighted");
+	$('#im4').addClass("hidden");
+	$('#im8').removeClass("highlighted");
+	$('#im8').addClass("hidden");
+  }
+  else
+  {
+    document.getElementById('im1').src='100.jpg';
+	document.getElementById('im2').src='100.jpg';
+	document.getElementById('im3').src='100.jpg';
+	document.getElementById('im4').src='100.jpg';
+	document.getElementById('im5').src='100.jpg';
+	document.getElementById('im6').src='100.jpg';
+	document.getElementById('im7').src='100.jpg';
+	document.getElementById('im8').src='100.jpg';
+	document.getElementById('im9').src='100.jpg';
+	document.getElementById('im10').src='100.jpg';
+  }
+  CheckToFinish(NumberOfClick);
+    count1=0;
+  CountIm1=0;
+  CountIm2=0;
+  CountIm3=0;
+  CountIm4=0;
+  CountIm5=0;
+  CountIm6=0;
+  CountIm7=0;
+  CountIm8=0;
+  CountIm9=0;
+  CountIm10=0;  
+}
+
+function fun1(SelectedPhoto)
+{	
+var old;
+while(count1!=2)
+	{
+	    switch (SelectedPhoto)
+	    {
+	    case 'im1':
+		    {	document.getElementById('im1').src=index1+'.jpg';
+			    count1++;
+			    CountIm1++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+		    }
+		break;
+	    case 'im2':
+	       {    document.getElementById('im2').src=index4+'.jpg';
+		        count1++;
+			    CountIm2++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	       }
+	   break;
+	   case 'im3':
+	       {    document.getElementById('im3').src=index+'.jpg';
+		       count1++;
+			   CountIm3++;
+			   NumberOfClick++;
+			   if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	       }
+	   break;
+	  case 'im4':
+	      { 	document.getElementById('im4').src=index2+'.jpg';
+			    count1++;
+			    CountIm4++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  	  	  case 'im5':
+	      { 	document.getElementById('im5').src=index3+'.jpg';
+			    count1++;
+			    CountIm5++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  case 'im6':
+	      { 	document.getElementById('im6').src=index+'.jpg';
+			    count1++;
+			    CountIm6++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  case 'im7':
+	      { 	document.getElementById('im7').src=index1+'.jpg';
+			    count1++;
+			    CountIm7++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  	  case 'im8':
+	      { 	document.getElementById('im8').src=index2+'.jpg';
+			    count1++;
+			    CountIm8++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  case 'im9':
+	      { 	document.getElementById('im9').src=index4+'.jpg';
+			    count1++;
+			    CountIm9++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+	  case 'im10':
+	      { 	document.getElementById('im10').src=index3+'.jpg';
+			    count1++;
+			    CountIm10++;
+				NumberOfClick++;
+				if(count1 ==2)
+				{
+				   	setTimeout(
+				    'fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick)',1000);
+				}
+	      }
+	  break;
+        }
+
+      old =document.getElementById(this.id).src;
+    }
+//fun2(CountIm1,CountIm2,CountIm3,CountIm4,CountIm5,CountIm6,CountIm7,CountIm8,CountIm9,CountIm10,NumberOfClick); 
+}
+
+	//else 
+	//{
+	//	document.getElementById(xx).src='100.jpg';
+	//	x=0;
+	//	count1--;
+//	}
+
+</script>
+
+
+<script>
+document.write("<p align='center' ><table border='2' width='20'> <tr> <td> <u><b> <input class='highlighted' type='image' id='im1' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td> <td> <u><b> <input class='highlighted' type='image' id='im2' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td><td> <u><b> <input class='highlighted' type='image' id='im3' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td><td> <u><b> <input class='highlighted' type='image' id='im4' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td> <td> <input type='image' class='highlighted' id='im5' onclick='fun1(this.id)' src='100.jpg' width='150'/></td></tr> <tr> <td> <u><b> <input class='highlighted' type='image' id='im6' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td><td> <u><b> <input class='highlighted' type='image' id='im7' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td><td> <u><b> <input class='highlighted' type='image' id='im8' onclick='fun1(this.id)' src='100.jpg' width='150'/> </b> </u> </td><td><u><b><input type='image' class='highlighted' id='im9' onclick='fun1(this.id)' src='100.jpg' width='150'/></b></u> </td> <td><input type='image' class='highlighted' id='im10' onclick='fun1(this.id)' src='100.jpg' width='150'/></td></tr> </table></p> ");
+</script>
+<div>
+<center><a href="Level3.html" ><button style="width:210px;height:50px;color:#008B8B">Go Leve1 3</button> </a></center>
+</div>
+</div>
+</body>
+	</html>

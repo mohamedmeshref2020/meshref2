@@ -1,0 +1,25 @@
+
+#stuffToShow {
+    display:none;
+}
+
+#radio1 {
+    opacity:0.01;
+}
+
+#radio1:checked + #stuffToShow {
+    display:block;
+}
+#stuffToShow2 {
+    display:none;
+}
+
+#radio2 {
+    opacity:0.01;
+}
+
+
+
+#radio2:checked + #stuffToShow2 {
+    display:block;
+}
